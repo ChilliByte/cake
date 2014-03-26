@@ -15,16 +15,16 @@ public class Cake extends JFrame
 
     public Cake()
     {
-        title = new JLabel("Get sum cake.");
+        title = new JLabel("Get Akash to beat sum people up");
         setResizable(false);
-        setTitle("Cake!");
+        setTitle("Hard lad!");
         setSize(250, 100);
         Container cp = getContentPane();
         cp.setLayout(new FlowLayout());
         cp.add(title);
         cp.add(amount);
         amount.setEditable(false);
-        amount.setText((new StringBuilder()).append("Cake collected so far: ").append(count).append("                 ").toString());
+        amount.setText((new StringBuilder()).append("People beaten up so far: ").append(count).append("                 ").toString());
         setDefaultCloseOperation(3);
         setVisible(true);
     }
@@ -41,15 +41,15 @@ public class Cake extends JFrame
     {
         count++;
         String cakeText[] = {
-            (new StringBuilder()).append("Congratulations! You have collected ").append(count).append(" cake so far!").toString()
+            (new StringBuilder()).append("Congratulations! Akash has beaten up ").append(count).append(" people so far!").toString()
         };
         writeFile(cakeText);
-        amount.setText((new StringBuilder()).append("Cake collected so far: ").append(count).toString());
+        amount.setText((new StringBuilder()).append("People beaten up so far: ").append(count).toString());
     }
 
     private static void writeFile(String i[])
     {
-        File file = new File((new StringBuilder()).append("Cake ").append(count).append(".txt").toString());
+        File file = new File((new StringBuilder()).append("Akash is hard ").append(count).append(".txt").toString());
         try
         {
             FileWriter filewriter = new FileWriter(file, true);
